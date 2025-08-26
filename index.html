@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Platinum Gym - Transform Your Body</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo">PLATINUM GYM</div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#calculator">Calculator</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="theme-toggle" onclick="toggleTheme()">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>TRANSFORM YOUR BODY</h1>
+            <p>Join Platinum Gym and achieve your fitness goals with our state-of-the-art equipment and expert trainers</p>
+            <a href="#pricing" class="btn">Start Your Journey</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Platinum Gym</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Welcome to Platinum Gym, where your fitness journey begins! Located near Shiv Mandir, New Aman City, Garden Colony, Kharar, Punjab, we're your premier destination for achieving health and wellness goals.</p>
+                    <p>Our state-of-the-art facility features modern equipment, expert trainers, and a supportive community that will motivate you every step of the way. Whether you're a beginner or an experienced athlete, we have programs tailored just for you.</p>
+                </div>
+                <div class="about-image">
+                    <div class="stats">
+                        <div class="stat-item">
+                            <div class="stat-number">500+</div>
+                            <div>Happy Members</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">15+</div>
+                            <div>Expert Trainers</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">5</div>
+                            <div>Years Experience</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Weight Training">
+                    </div>
+                    <div class="service-icon">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <h3>Weight Training</h3>
+                    <p>Professional weight training programs with modern equipment and expert guidance to build strength and muscle mass.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Cardio Training">
+                    </div>
+                    <div class="service-icon">
+                        <i class="fas fa-running"></i>
+                    </div>
+                    <h3>Cardio Training</h3>
+                    <p>High-intensity cardio workouts designed to improve your cardiovascular health and burn calories effectively.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Personal Training">
+                    </div>
+                    <div class="service-icon">
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <h3>Personal Training</h3>
+                    <p>One-on-one sessions with certified trainers to create personalized workout plans based on your fitness goals.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Group Classes">
+                    </div>
+                    <div class="service-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Group Classes</h3>
+                    <p>Fun and energetic group fitness classes including Zumba, Yoga, CrossFit, and more.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Nutrition">
+                    </div>
+                    <div class="service-icon">
+                        <i class="fas fa-apple-alt"></i>
+                    </div>
+                    <h3>Nutrition Guidance</h3>
+                    <p>Expert nutrition counseling to help you make the right dietary choices for your fitness journey.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Recovery">
+                    </div>
+                    <div class="service-icon">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h3>Recovery & Spa</h3>
+                    <p>Recovery services including massage therapy, sauna, and steam rooms for complete wellness.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workout Program Section -->
+    <section id="workout-program" class="section">
+        <div class="container">
+            <h2 class="section-title">Weekly Workout Program</h2>
+            <p style="text-align:center;font-size:1.2rem;margin-bottom:3rem;color:var(--text-color);">
+                Follow our professional 6-day workout split designed by expert trainers
+            </p>
+            
+            <div class="workout-tabs">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" onclick="showWorkout('chest')">
+                        <i class="fas fa-dumbbell"></i> Chest & Triceps
+                    </button>
+                    <button class="tab-btn" onclick="showWorkout('back')">
+                        <i class="fas fa-hand-rock"></i> Back & Biceps
+                    </button>
+                    <button class="tab-btn" onclick="showWorkout('shoulder')">
+                        <i class="fas fa-fire"></i> Shoulders
+                    </button>
+                    <button class="tab-btn" onclick="showWorkout('legs')">
+                        <i class="fas fa-running"></i> Legs
+                    </button>
+                </div>
+
+                <!-- <div class="workout-schedule">
+                    <div class="schedule-header">
+                        <h3>💪 6-Day Training Schedule</h3>
+                        <div class="schedule-grid">
+                            <div class="day-card active" data-day="monday">
+                                <div class="day-name">MON</div>
+                                <div class="muscle-group">Chest & Triceps</div>
+                            </div>
+                            <div class="day-card" data-day="tuesday">
+                                <div class="day-name">TUE</div>
+                                <div class="muscle-group">Back & Biceps</div>
+                            </div>
+                            <div class="day-card" data-day="wednesday">
+                                <div class="day-name">WED</div>
+                                <div class="muscle-group">Shoulders</div>
+                            </div>
+                            <div class="day-card" data-day="thursday">
+                                <div class="day-name">THU</div>
+                                <div class="muscle-group">Legs</div>
+                            </div>
+                            <div class="day-card" data-day="friday">
+                                <div class="day-name">FRI</div>
+                                <div class="muscle-group">Chest & Triceps</div>
+                            </div>
+                            <div class="day-card" data-day="saturday">
+                                <div class="day-name">SAT</div>
+                                <div class="muscle-group">Back & Biceps</div>
+                            </div>
+                            <div class="day-card rest" data-day="sunday">
+                                <div class="day-name">SUN</div>
+                                <div class="muscle-group">Rest Day</div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- Chest & Triceps Workout -->
+                <div class="workout-content active" id="chest-workout">
+                    <div class="workout-header">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Chest Workout" class="workout-image">
+                        <div class="workout-info">
+                            <h3>🔥 CHEST & TRICEPS DAY</h3>
+                            <p>Monday & Friday | Focus on building chest mass and tricep strength</p>
+                            <div class="workout-stats">
+                                <span><i class="fas fa-clock"></i> 60-75 mins</span>
+                                <span><i class="fas fa-fire"></i> High Intensity</span>
+                                <span><i class="fas fa-target"></i> 8 Exercises</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                <div class="exercise-list">
+                        <div class="exercise-item">
+                            <div class="exercise-info">
+                                <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Bench Press" class="exercise-img">
+                                <div class="exercise-name">
+                                    <i class="fas fa-dumbbell"></i>
+                                    <span>Bench Press</span>
+                                </div>
+                            </div>
+                            <div class="exercise-sets">4 sets x 8-10 reps</div>
+                        </div>
+                        <div class="exercise-item">
+                            <div class="exercise-info">
+                                <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Incline Press" class="exercise-img">
+                                <div class="exercise-name">
+                                    <i class="fas fa-dumbbell"></i>
+                                    <span>Incline Dumbbell Press</span>
+                                </div>
+                            </div>
+                            <div class="exercise-sets">4 sets x 8-12 reps</div>
+                        </div>
+                        <div class="exercise-item">
+                            <div class="exercise-info">
+                                <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Decline Press" class="exercise-img">
+                                <div class="exercise-name">
+                                    <i class="fas fa-dumbbell"></i>
+                                    <span>Decline Barbell Press</span>
+                                </div>
+                            </div>
+                            <div class="exercise-sets">3 sets x 10-12 reps</div>
+                        </div>
+                        <div class="exercise-item">
+                            <div class="exercise-info">
+                                <img src="https://images.unsplash.com/photo-1534258936925-c58bed479fcb?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Dumbbell Flyes" class="exercise-img">
+                                <div class="exercise-name">
+                                    <i class="fas fa-dumbbell"></i>
+                                    <span>Dumbbell Flyes</span>
+                                </div>
+                            </div>
+                            <div class="exercise-sets">3 sets x 12-15 reps</div>
+                        </div>
+                        <div class="exercise-item">
+                            <div class="exercise-info">
+                                <img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Cable Crossover" class="exercise-img">
+                                <div class="exercise-name">
+                                    <i class="fas fa-dumbbell"></i>
+                                    <span>Cable Crossover</span>
+                                </div>
+                            </div>
+                            <div class="exercise-sets">3 sets x 12-15 reps</div>
+                        </div>
+                        <div class="exercise-item">
+                            <div class="exercise-info">
+                                <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Close Grip Press" class="exercise-img">
+                                <div class="exercise-name">
+                                    <i class="fas fa-dumbbell"></i>
+                                    <span>Close-Grip Bench Press</span>
+                                </div>
+                            </div>
+                            <div class="exercise-sets">4 sets x 8-10 reps</div>
+                        </div>
+                        <div class="exercise-item">
+                            <div class="exercise-info">
+                                <img src="https://images.unsplash.com/photo-1594737626072-90dc274bc2bd?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Tricep Dips" class="exercise-img">
+                                <div class="exercise-name">
+                                    <i class="fas fa-dumbbell"></i>
+                                    <span>Tricep Dips</span>
+                                </div>
+                            </div>
+                            <div class="exercise-sets">3 sets x 10-15 reps</div>
+                        </div>
+                        <div class="exercise-item">
+                            <div class="exercise-info">
+                                <img src="https://images.unsplash.com/photo-1566906506815-a9b9a9bafcef?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Overhead Extension" class="exercise-img">
+                                <div class="exercise-name">
+                                    <i class="fas fa-dumbbell"></i>
+                                    <span>Overhead Tricep Extension</span>
+                                </div>
+                            </div>
+                            <div class="exercise-sets">3 sets x 12-15 reps</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Back & Biceps Workout -->
+                <div class="workout-content" id="back-workout">
+                    <div class="workout-header">
+                        <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Back Workout" class="workout-image">
+                        <div class="workout-info">
+                            <h3>💪 BACK & BICEPS DAY</h3>
+                            <p>Tuesday & Saturday | Build a strong back and powerful biceps</p>
+                            <div class="workout-stats">
+                                <span><i class="fas fa-clock"></i> 65-80 mins</span>
+                                <span><i class="fas fa-fire"></i> High Intensity</span>
+                                <span><i class="fas fa-target"></i> 8 Exercises</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="exercise-list">
+                        <div class="exercise-item">
+                            <div class="exercise-info">
+                                <img src="https://images.unsplash.com/photo-1434608519344-49d77a699e1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Deadlifts" class="exercise-img">
+                                <div class="exercise-name">
+                                    <i class="fas fa-dumbbell"></i>
+                                    <span>Deadlifts</span>
+                                </div>
+                            </div>
+                            <div class="exercise-sets">4 sets x 6-8 reps</div>
+                        </div>
+                        <div class="exercise-item">
+                            <div class="exercise-info">
+                                <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Pull-ups" class="exercise-img">
+                                <div class="exercise-name">
+                                    <i class="fas fa-dumbbell"></i>
+                                    <span>Pull-ups/Lat Pulldowns</span>
+                                </div>
+                            </div>
+                            <div class="exercise-sets">4 sets x 8-12 reps</div>
+                        </div>
+                        <div class="exercise-item">
+                            <div class="exercise-info">
+                                <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Barbell Rows" class="exercise-img">
+                                <div class="exercise-name">
+                                    <i class="fas fa-dumbbell"></i>
+                                    <span>Barbell Rows</span>
+                                </div>
+                            </div>
+                            <div class="exercise-sets">4 sets x 8-10 reps</div>
+                        </div>
+                        <div class="exercise-item">
+                            <div class="exercise-info">
+                                <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="T-Bar Rows" class="exercise-img">
+                                <div class="exercise-name">
+                                    <i class="fas fa-dumbbell"></i>
+                                    <span>T-Bar Rows</span>
+                                </div>
+                            </div>
+                            <div class="exercise-sets">3 sets x 10-12 reps</div>
+                        </div>
+                        <div class="exercise-item">
+                            <div class="exercise-info">
+                                <img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Cable Rows" class="exercise-img">
+                                <div class="exercise-name">
+                                    <i class="fas fa-dumbbell"></i>
+                                    <span>Cable Rows</span>
+                                </div>
+                            </div>
+                            <div class="exercise-sets">3 sets x 12-15 reps</div>
+                        </div>
+                        <div class="exercise-item">
+                            <div class="exercise-info">
+                                <img src="https://images.unsplash.com/photo-1566906506815-a9b9a9bafcef?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Barbell Curls" class="exercise-img">
+                                <div class="exercise-name">
+                                    <i class="fas fa-dumbbell"></i>
+                                    <span>Barbell Bicep Curls</span>
+                                </div>
+                            </div>
+                            <div class="exercise-sets">4 sets x 10-12 reps</div>
+                        </div>
+                        <div class="exercise-item">
+                            <div class="exercise-info">
+                                <img src="https://images.unsplash.com/photo-1594737626072-90dc274bc2bd?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Hammer Curls" class="exercise-img">
+                                <div class="exercise-name">
+                                    <i class="fas fa-dumbbell"></i>
+                                    <span>Dumbbell Hammer Curls</span>
+                                </div>
+                            </div>
+                            <div class="exercise-sets">3 sets x 12-15 reps</div>
+                        </div>
+                        <div class="exercise-item">
+                            <div class="exercise-info">
+                                <img src="https://images.unsplash.com/photo-1534258936925-c58bed479fcb?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Cable Curls" class="exercise-img">
+                                <div class="exercise-name">
+                                    <i class="fas fa-dumbbell"></i>
+                                    <span>Cable Bicep Curls</span>
+                                </div>
+                            </div>
+                            <div class="exercise-sets">3 sets x 12-15 reps</div>
+                        </div>
+                    </div> x 12-15 reps</div>
+                        </div>
+                        <div class="exercise-item">
+                            <div class="exercise-name">
+                                <i class="fas fa-dumbbell"></i>
+                                <span>Cable Bicep Curls</span>
+                            </div>
+                            <div class="exercise-sets">3 sets x 12-15 reps</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Shoulders Workout -->
+                <div class="workout-content" id="shoulder-workout">
+                    <div class="workout-header">
+                        <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Shoulder Workout" class="workout-image">
+                        <div class="workout-info">
+                            <h3>🔥 SHOULDERS DAY</h3>
+                            <p>Wednesday | Build massive, rounded shoulders</p>
+                            <div class="workout-stats">
+                                <span><i class="fas fa-clock"></i> 50-65 mins</span>
+                                <span><i class="fas fa-fire"></i> Medium-High Intensity</span>
+                                <span><i class="fas fa-target"></i> 7 Exercises</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="exercise-list">
+                        <div class="exercise-item">
+                            <div class="exercise-name">
+                                <i class="fas fa-dumbbell"></i>
+                                <span>Overhead Press</span>
+                            </div>
+                            <div class="exercise-sets">4 sets x 8-10 reps</div>
+                        </div>
+                        <div class="exercise-item">
+                            <div class="exercise-name">
+                                <i class="fas fa-dumbbell"></i>
+                                <span>Dumbbell Shoulder Press</span>
+                            </div>
+                            <div class="exercise-sets">4 sets x 10-12 reps</div>
+                        </div>
+                        <div class="exercise-item">
+                            <div class="exercise-name">
+                                <i class="fas fa-dumbbell"></i>
+                                <span>Lateral Raises</span>
+                            </div>
+                            <div class="exercise-sets">4 sets x 12-15 reps</div>
+                        </div>
+                        <div class="exercise-item">
+                            <div class="exercise-name">
+                                <i class="fas fa-dumbbell"></i>
+                                <span>Front Raises</span>
+                            </div>
+                            <div class="exercise-sets">3 sets x 12-15 reps</div>
+                        </div>
+                        <div class="exercise-item">
+                            <div class="exercise-name">
+                                <i class="fas fa-dumbbell"></i>
+                                <span>Rear Delt Flyes</span>
+                            </div>
+                            <div class="exercise-sets">4 sets x 12-15 reps</div>
+                        </div>
+                        <div class="exercise-item">
+                            <div class="exercise-name">
+                                <i class="fas fa-dumbbell"></i>
+                                <span>Upright Rows</span>
+                            </div>
+                            <div class="exercise-sets">3 sets x 10-12 reps</div>
+                        </div>
+                        <div class="exercise-item">
+                            <div class="exercise-name">
+                                <i class="fas fa-dumbbell"></i>
+                                <span>Shrugs</span>
+                            </div>
+                            <div class="exercise-sets">4 sets x 12-15 reps</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Legs Workout -->
+                <div class="workout-content" id="legs-workout">
+                    <div class="workout-header">
+                        <img src="https://images.unsplash.com/photo-1434608519344-49d77a699e1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Leg Workout" class="workout-image">
+                        <div class="workout-info">
+                            <h3>🦵 LEGS DAY</h3>
+                            <p>Thursday | Build powerful legs and glutes</p>
+                            <div class="workout-stats">
+                                <span><i class="fas fa-clock"></i> 70-90 mins</span>
+                                <span><i class="fas fa-fire"></i> Very High Intensity</span>
+                                <span><i class="fas fa-target"></i> 8 Exercises</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="exercise-list">
+                        <div class="exercise-item">
+                            <div class="exercise-name">
+                                <i class="fas fa-dumbbell"></i>
+                                <span>Squats</span>
+                            </div>
+                            <div class="exercise-sets">4 sets x 8-12 reps</div>
+                        </div>
+                        <div class="exercise-item">
+                            <div class="exercise-name">
+                                <i class="fas fa-dumbbell"></i>
+                                <span>Romanian Deadlifts</span>
+                            </div>
+                            <div class="exercise-sets">4 sets x 8-10 reps</div>
+                        </div>
+                        <div class="exercise-item">
+                            <div class="exercise-name">
+                                <i class="fas fa-dumbbell"></i>
+                                <span>Leg Press</span>
+                            </div>
+                            <div class="exercise-sets">4 sets x 12-15 reps</div>
+                        </div>
+                        <div class="exercise-item">
+                            <div class="exercise-name">
+                                <i class="fas fa-dumbbell"></i>
+                                <span>Walking Lunges</span>
+                            </div>
+                            <div class="exercise-sets">3 sets x 12 each leg</div>
+                        </div>
+                        <div class="exercise-item">
+                            <div class="exercise-name">
+                                <i class="fas fa-dumbbell"></i>
+                                <span>Leg Extensions</span>
+                            </div>
+                            <div class="exercise-sets">3 sets x 12-15 reps</div>
+                        </div>
+                        <div class="exercise-item">
+                            <div class="exercise-name">
+                                <i class="fas fa-dumbbell"></i>
+                                <span>Leg Curls</span>
+                            </div>
+                            <div class="exercise-sets">3 sets x 12-15 reps</div>
+                        </div>
+                        <div class="exercise-item">
+                            <div class="exercise-name">
+                                <i class="fas fa-dumbbell"></i>
+                                <span>Calf Raises</span>
+                            </div>
+                            <div class="exercise-sets">4 sets x 15-20 reps</div>
+                        </div>
+                        <div class="exercise-item">
+                            <div class="exercise-name">
+                                <i class="fas fa-dumbbell"></i>
+                                <span>Bulgarian Split Squats</span>
+                            </div>
+                            <div class="exercise-sets">3 sets x 10 each leg</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="workout-tips">
+                <h3>💡 Pro Training Tips</h3>
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <i class="fas fa-clock"></i>
+                        <h4>Rest Periods</h4>
+                        <p>2-3 minutes between heavy sets, 1-2 minutes for isolation exercises</p>
+                    </div>
+                    <div class="tip-card">
+                        <i class="fas fa-tint"></i>
+                        <h4>Hydration</h4>
+                        <p>Drink water throughout your workout to maintain performance</p>
+                    </div>
+                    <div class="tip-card">
+                        <i class="fas fa-fire"></i>
+                        <h4>Warm-up</h4>
+                        <p>Always start with 5-10 minutes of light cardio and dynamic stretching</p>
+                    </div>
+                    <div class="tip-card">
+                        <i class="fas fa-chart-line"></i>
+                        <h4>Progressive Overload</h4>
+                        <p>Gradually increase weights, reps, or sets each week for continuous gains</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="section">
+        <div class="container">
+            <h2 class="section-title">Membership Plans</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Basic Plan</h3>
+                    <div class="price">₹1000<span style="font-size:1rem;">/month</span></div>
+                    <ul class="features">
+                        <li>Access to all gym equipment</li>
+                        <li>Basic workout guidance</li>
+                        <li>Locker facility</li>
+                        <li>Water dispenser access</li>
+                    </ul>
+                    <a href="#contact" class="btn" onclick="initiatePayment('basic', 1000)">Choose Plan - ₹1000</a>
+                </div>
+                <div class="pricing-card featured">
+                    <h3>Premium Plan</h3>
+                    <div class="price">₹1500<span style="font-size:1rem;">/month</span></div>
+                    <ul class="features">
+                        <li>Everything in Basic Plan</li>
+                        <li>2 Personal Training Sessions</li>
+                        <li>Group Classes Access</li>
+                        <li>Nutrition Consultation</li>
+                        <li>Free Protein Shake</li>
+                    </ul>
+                    <button class="btn" onclick="initiatePayment('premium', 1500)" style="background:white;color:var(--primary-color);border:none;width:100%;">Most Popular - ₹1500</button>
+                </div>
+                <div class="pricing-card">
+                    <h3>VIP Plan</h3>
+                    <div class="price">₹2500<span style="font-size:1rem;">/month</span></div>
+                    <ul class="features">
+                        <li>Everything in Premium Plan</li>
+                        <li>Unlimited Personal Training</li>
+                        <li>Recovery & Spa Access</li>
+                        <li>Priority Equipment Access</li>
+                        <li>Free Supplements</li>
+                        <li>Diet Chart Included</li>
+                    </ul>
+                    <a href="#contact" class="btn" onclick="initiatePayment('vip', 2500)">Choose Plan - ₹2500</a>
+                </div>
+            </div>
+            <div style="text-align:center;margin-top:2rem;">
+                <p><strong>Special Offer:</strong> Pay yearly and get 2 months FREE! 💪</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calculator Section -->
+    <section id="calculator" class="section services">
+        <div class="container">
+            <h2 class="section-title">Fitness Calculator</h2>
+            <div class="calculator">
+                <h3 style="text-align:center;margin-bottom:2rem;color:var(--primary-color);">BMI & Weight Goal Calculator</h3>
+                
+                <div class="form-group">
+                    <label for="weight">Current Weight (kg)</label>
+                    <input type="number" id="weight" placeholder="Enter your weight">
+                </div>
+                
+                <div class="form-group">
+                    <label for="height">Height (cm)</label>
+                    <input type="number" id="height" placeholder="Enter your height">
+                </div>
+                
+                <div class="form-group">
+                    <label for="age">Age</label>
+                    <input type="number" id="age" placeholder="Enter your age">
+                </div>
+                
+                <div class="form-group">
+                    <label for="gender">Gender</label>
+                    <select id="gender">
+                        <option value="">Select Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="goal">Fitness Goal</label>
+                    <select id="goal">
+                        <option value="">Select Goal</option>
+                        <option value="lose">Lose Weight</option>
+                        <option value="maintain">Maintain Weight</option>
+                        <option value="gain">Gain Weight</option>
+                    </select>
+                </div>
+                
+                <button class="btn" onclick="calculateBMI()" style="width:100%;">Calculate</button>
+                
+                <div class="calculator-result" id="result">
+                    <h3>Your Results:</h3>
+                    <div id="bmi-result"></div>
+                    <div id="recommendation"></div>
+                    <div id="diet-plan"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Near Shiv Mandir, New Aman City, Garden Colony, Kharar, Punjab, 140301</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>8102579649</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>vishalk81025@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <span>Mon-Sun: 5:00 AM - 11:00 PM</span>
+                    </div>
+                    
+                    <div class="social-links">
+                        <h3>Follow Us</h3>
+                        <a href="https://facebook.com/platinumgym" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://instagram.com/platinumgym" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/platinumgym" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://youtube.com/platinumgym" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <form class="contact-form" onsubmit="submitForm(event)">
+                    <h3 style="color:var(--primary-color);margin-bottom:1rem;">Send Message</h3>
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required style="width:100%;padding:0.8rem;border:2px solid #ddd;border-radius:5px;font-family:Arial;resize:vertical;"></textarea>
+                    </div>
+                    <button type="submit" class="btn" style="width:100%;">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>Stay Updated with Health Tips!</h2>
+            <p>Subscribe to our newsletter and get weekly health and fitness tips delivered to your inbox</p>
+            <form class="newsletter-form" onsubmit="subscribeNewsletter(event)">
+                <input type="email" placeholder="Enter your email" required id="newsletter-email">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Platinum Gym. All rights reserved. | Near Shiv Mandir, Kharar, Punjab | Call: 8102579649</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
